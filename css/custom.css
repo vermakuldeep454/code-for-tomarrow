@@ -125,7 +125,6 @@ small {
 	font-size: 20px;
 }
 
-
 /* Typography End */
 /* Navbar Begin */
 .nav-pri {
@@ -187,6 +186,18 @@ small {
 	.discover-txt {
 		font-size: 15px;
 	}
+	.text-c{
+		
+		float:inherit !important;
+	}
+	footer ul li{
+		margin-bottom:20px;
+		line-height:17px !important;
+	}
+	.accordion-button{
+		font-size:20px !important;
+	}
+	
 }
 
 @media only screen and (max-width: 500px) {
@@ -236,43 +247,75 @@ small {
 }
 
 /* Estimate Your Return Begin */
+/* Slider Container */
 .slidecontainer {
-	width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
+/* Slider Styling */
+/* Slider Container */
+.slidecontainer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Slider Styling */
+/* Slider Container */
+.slidecontainer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Slider Styling */
 .slider {
-	-webkit-appearance: none;
-	width: 100%;
-	height: 15px;
-	border-radius: 5px;
-	background: #d3d3d3;
-	outline: none;
-	opacity: 0.7;
-	-webkit-transition: .2s;
-	transition: opacity .2s;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 16px; /* Sleeker slider height */
+    border-radius: 5px;
+    background: #e0e0e0; /* Default background */
+    outline: none;
+    transition: background 0.3s ease-in-out;
 }
 
 .slider:hover {
-	opacity: 1;
+    background: #d3d3d3; /* Slightly darker on hover */
 }
 
+/* Slider Thumb Styling */
 .slider::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	background: #6790f8;
-	cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; /* Thumb size */
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff; /* White color for the thumb */
+    border: 2px solid #5178e0; /* Blue border around the thumb */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for thumb */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: #f0f0f0; /* Slightly darker white on hover */
 }
 
 .slider::-moz-range-thumb {
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	background: #6790f8;
-	cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff; /* White color for the thumb */
+    border: 2px solid #5178e0; /* Blue border around the thumb */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for thumb */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
+
+.slider::-moz-range-thumb:hover {
+    background: #f0f0f0; /* Slightly darker white on hover */
+}
+
 
 .pt-40 {
 	padding-top: 40px;
@@ -388,6 +431,14 @@ small {
 	height: 50px;
 }
 
+@media only screen and (max-width: 762px) {
+
+
+	.d-sm{
+		display:none;
+	}
+}
+
 @media only screen and (max-width: 500px) {
 
 	.carousel-control-prev,
@@ -396,6 +447,7 @@ small {
 		transform: translateY(-50%);
 		width: auto;
 	}
+
 }
 
 /* faq Begin */
@@ -412,7 +464,7 @@ small {
 }
 
 .accordion-button {
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 700;
 	color: #000;
 	background-color: #fcfbff;
@@ -420,8 +472,19 @@ small {
 
 /* faq End */
 /* foter Begin */
+
+footer .nav-link {
+   
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer p{
+	font-size:16px !important;
+}
 footer ul li {
-	font-size: 19px;
+	margin-bottom:15px;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.6;
 }
